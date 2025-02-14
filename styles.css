@@ -20,15 +20,15 @@ a{
 }
 
 body{
-    background-color: #093F5C;
-    width:100%;
+    background-color: #5c095b;
+    width:70%;
     overflow: hidden;
 }
 
 .title-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     margin-top: -5rem;
 
     text-align: center;
@@ -37,7 +37,7 @@ body{
 }
 
 h1{
-    font-family: "Anton SC", serif;
+    font-family: "Arial";
     font-size: 25em;
     font-weight: bold;
     letter-spacing: -0.01em;;
