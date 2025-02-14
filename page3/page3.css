@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+body{
+    background-color: #093F5C;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+p{
+    font-family: "Instrument Sans", serif;
+    font-size: 1.5em;
+    color:white;
+}
+
+.glacier{
+    animation: emphasis 3s steps(2) 20s infinite;
+}
+
+@keyframes emphasis {
+    from{
+        text-decoration: none;
+        -webkit-text-decoration-color: rgba(255, 255, 255, 0); /* Safari */   
+        text-decoration-color: rgba(255, 255, 255, 0);
+    }
+    to{
+        text-decoration: underline;
+        -webkit-text-decoration-color: rgba(255, 255, 255); /* Safari */   
+        text-decoration-color: rgba(255, 255, 255);
+    }
+}
+
+.glacier:hover{
+    font-family: "Anton SC", serif;
+    font-size: 1.1em;
+    line-height: 0.9em;
+}
+
+.text-container{
+    position: absolute;
+    max-width: 40rem;
+    left: 15rem;
+    top: 10rem;
+}
+
+.main-text{
+    max-width: 70%;
+    left: 10%;
+}
+
+.stresses{
+    position: relative;
+    left: 40%;
+}
+
+.induced{
+    position: relative;
+    left: 50%;
+}
+
+.weight{
+    position: relative;
+    left: 60%;
+
+    font-size: 2em;
+    line-height: 1.5em;
+
+    animation: weight 40s ease-in-out 3s forwards;
+}
+
+.weight1{
+    transform: rotate(5deg);
+    line-height: 0.7em;
+    width: fit-content;
+}
+.weight2{
+    transform: rotate(1deg);
+    line-height: 0.7em;
+    width: fit-content;
+}
+.weight3{
+    transform: rotate(-5deg);
+    line-height: 0.7em;
+    width: fit-content;
+}
+
+@keyframes weight {
+    0%{
+        transform: translateY(0rem);
+    }
+
+    10%{
+        transform: translateY(3rem);   
+    }
+
+    40%{
+        transform: translateY(10rem);   
+    }
+
+    60%{
+        transform: translateY(15rem);  
+    }
+
+    100%{
+        transform: translateY(30rem);
+    }
+}
+
+.crevasses{
+    display: inline-block;
+    cursor: default;
+}
+.crevasses:hover{
+    display: inline-block;
+    cursor: default;
+    opacity: 0.5;
+    transform: rotate(5deg);
+}
+
+.seracs{
+    display: inline-block;
+    cursor: default;
+}
+.seracs:hover{
+    display: inline-block;
+    cursor: default;
+    opacity: 0.5;
+    transform: rotate(5deg);
+}
+
+
+.crevasses-def{
+    position: absolute;
+    left: 0rem;
+    bottom: 10rem;
+    max-width: 20rem;
+    
+    transform: rotate(5deg);
+    /* opacity: 0; */
+    display: none;
+}
+
+.seracs-def{
+    position: absolute;
+    left: 0rem;
+    bottom: 10rem;
+    max-width: 20rem;
+
+    transform: rotate(5deg);
+    display: none;
+}

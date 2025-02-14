@@ -1,0 +1,122 @@
+/* fonts that I used 
+font-family: "Anton SC", serif;
+font-family: "Instrument Sans", serif;
+value from 400 to 700
+font-family: "Sofia Sans", serif;
+value from 1 to 1000
+font-family: "Sofia Sans Condensed", serif;
+value from 1 to 1000
+*/
+
+
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+body{
+    background-color: #093F5C;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+ 
+p{
+    font-family: "Instrument Sans", serif;
+    font-size: 1.5em;
+    color:white;
+}
+
+
+.glacier{
+    animation: emphasis 3s steps(2) 12s infinite;
+}
+
+@keyframes emphasis {
+    from{
+        text-decoration: none;
+        -webkit-text-decoration-color: rgba(255, 255, 255, 0); /* Safari */   
+        text-decoration-color: rgba(255, 255, 255, 0);
+    }
+    to{
+        text-decoration: underline;
+        -webkit-text-decoration-color: rgba(255, 255, 255); /* Safari */   
+        text-decoration-color: rgba(255, 255, 255);
+    }
+}
+
+.glacier:hover {
+    font-family: "Anton SC", serif;
+    font-size: 1.1em;
+    line-height: 0.9em;
+}
+
+.big-text-container{
+    position: absolute;
+    top:1rem;
+    color: white;
+}
+
+h2{
+    font-family: "Sofia Sans Condensed", serif;
+    font-size: 7em;
+    font-weight: 200;
+}
+
+h1{
+    font-family: "Anton SC", serif;
+    font-size: 8em;
+    font-weight: normal;
+    line-height: 0.9em;
+}
+
+.body-text-container{
+    margin-top: 20rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+}
+
+#inthe{
+    transform: rotate(7deg) translateY(-1rem);
+    display: inline-block;
+
+    animation: pop-up 0.5s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+#polar{
+    animation: pop-up 0.5s ease-in-out 2s forwards;
+    opacity: 0;
+}
+
+#regions{
+    transform: rotate(-7deg) translateY(-1.3rem);
+    display: inline-block;
+
+    animation: pop-up 0.5s ease-in-out 3s forwards;
+    opacity: 0;
+}
+
+@keyframes pop-up{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

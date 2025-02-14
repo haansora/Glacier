@@ -1,0 +1,88 @@
+/* fonts that I used 
+font-family: "Anton SC", serif;
+font-family: "Instrument Sans", serif;
+value from 400 to 700
+font-family: "Sofia Sans", serif;
+value from 1 to 1000
+font-family: "Sofia Sans Condensed", serif;
+value from 1 to 1000
+*/
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+body{
+    background-color: #093F5C;
+    width:100%;
+    overflow: hidden;
+}
+
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+
+    text-align: center;
+
+    transform: rotate(5deg);
+}
+
+h1{
+    font-family: "Anton SC", serif;
+    font-size: 25em;
+    font-weight: bold;
+    letter-spacing: -0.01em;;
+    color:white;
+
+    animation: sliding1 60s ease-in-out forwards;
+}
+
+.text-container{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+
+    margin-top: -4rem;
+    max-width:45rem;
+    margin-left: auto;
+
+    padding-right:10rem;
+
+    transform: rotate(5deg);
+}
+
+p{
+    font-family: "Instrument Sans", serif;
+    font-size: 1.5em;
+    color:white;
+
+    animation: sliding2 15s ease-in-out forwards;
+}
+
+
+@keyframes sliding1 {
+    0.5% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(1440px); 
+    }
+}
+
+@keyframes sliding2 {
+    5% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(100px); 
+    }
+}

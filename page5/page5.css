@@ -1,0 +1,111 @@
+/* fonts that I used 
+font-family: "Anton SC", serif;
+font-family: "Instrument Sans", serif;
+value from 400 to 700
+font-family: "Sofia Sans", serif;
+value from 1 to 1000
+font-family: "Sofia Sans Condensed", serif;
+value from 1 to 1000
+*/
+
+
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+body{
+    background-color: #093F5C;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+p{
+    font-family: "Instrument Sans", serif;
+    font-size: 1.5em;
+    color:white;
+}
+
+.text-container {
+    max-width: 40rem;
+}
+
+.glacier{
+    animation: emphasis 3s steps(2) 15s infinite;
+}
+
+@keyframes emphasis {
+    from{
+        text-decoration: none;
+        -webkit-text-decoration-color: rgba(255, 255, 255, 0); /* Safari */   
+        text-decoration-color: rgba(255, 255, 255, 0);
+    }
+    to{
+        text-decoration: underline;
+        -webkit-text-decoration-color: rgba(255, 255, 255); /* Safari */   
+        text-decoration-color: rgba(255, 255, 255);
+    }
+}
+
+.glacier:hover {
+    font-family: "Anton SC", serif;
+    font-size: 1.1em;
+    line-height: 0.9em;
+}
+
+/* .showup {
+    opacity: 0;
+    animation: fade-in 5s ease-in-out 1s forwards;
+} */
+
+#years {
+    display: none;
+    margin-top: 10px;
+    letter-spacing: 0.2em;
+}
+
+#often {
+    display: none;
+    margin-top: 10px;
+    letter-spacing: 0.4em;
+}
+
+#centuries {
+    display: none;
+    margin-top: 10px;
+    letter-spacing: 0.9em;
+}
+
+#blank {
+    display: none;
+    opacity: 0;   
+}
+
+#years, #often, #centuries, #blank {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;   
+    }
+    to {
+        opacity: 1;
+    }
+}

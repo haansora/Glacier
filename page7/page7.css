@@ -1,0 +1,133 @@
+/* fonts that I used 
+font-family: "Anton SC", serif;
+font-family: "Instrument Sans", serif;
+value from 400 to 700
+font-family: "Sofia Sans", serif;
+value from 1 to 1000
+font-family: "Sofia Sans Condensed", serif;
+value from 1 to 1000
+*/
+
+
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+body{
+    padding-top: 10rem;
+    background-color: #093F5C;
+    width:100%;
+}
+ 
+p{
+    font-family: "Instrument Sans", serif;
+    font-size: 1.5em;
+    color:white;
+}
+
+
+.glacier{
+    animation: emphasis 3s steps(2) 12s infinite;
+}
+
+@keyframes emphasis {
+    from{
+        text-decoration: none;
+        -webkit-text-decoration-color: rgba(255, 255, 255, 0); /* Safari */   
+        text-decoration-color: rgba(255, 255, 255, 0);
+    }
+    to{
+        text-decoration: underline;
+        -webkit-text-decoration-color: rgba(255, 255, 255); /* Safari */   
+        text-decoration-color: rgba(255, 255, 255);
+    }
+}
+
+.glacier:hover {
+    font-family: "Anton SC", serif;
+    font-size: 1.1em;
+    line-height: 0.9em;
+}
+
+.one{
+    width: 100%;
+    height:fit-content;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 3rem;
+}
+
+.main-text{
+    flex:1;
+}
+.notes{
+    flex:1;  
+    opacity: 0.5;
+}
+
+
+.two{
+    width: 100%;
+    height:fit-content;
+
+    color:white;
+
+    padding: 3rem;
+}
+
+h2{
+    font-family: "Sofia Sans Condensed", serif;
+    font-weight: 200;
+    font-size: 4em;
+    line-height: 0.5em;
+}
+
+.highlight-text{
+    padding-left:10rem;
+    
+}
+
+#expand{
+    font-family: "Sofia Sans", serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+#condense{
+    font-weight: 600;
+    letter-spacing: -0.05em;
+}
+
+.after-highlight{
+    margin-top: 3rem;
+    padding-left:20rem;
+}
+
+
+.three{
+    width: 100%;
+    background-color: red;
+    height:30rem;
+}
+
+.four{
+    width: 100%;
+    background-color: blue;
+    height:20rem;
+}
+
+.final{
+    width: 100%;
+    background-color: red;
+    height:30rem;
+}

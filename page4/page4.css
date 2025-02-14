@@ -1,0 +1,150 @@
+/* fonts that I used 
+font-family: "Anton SC", serif;
+font-family: "Instrument Sans", serif;
+value from 400 to 700
+font-family: "Sofia Sans", serif;
+value from 1 to 1000
+font-family: "Sofia Sans Condensed", serif;
+value from 1 to 1000
+*/
+
+
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+body{
+    background-color: #093F5C;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+p{
+    font-family: "Instrument Sans", serif;
+    font-size: 1.5em;
+    color:white;
+}
+
+.glacier{
+    animation: emphasis 3s steps(2) 15s infinite;
+}
+
+@keyframes emphasis {
+    from{
+        text-decoration: none;
+        -webkit-text-decoration-color: rgba(255, 255, 255, 0); /* Safari */   
+        text-decoration-color: rgba(255, 255, 255, 0);
+    }
+    to{
+        text-decoration: underline;
+        -webkit-text-decoration-color: rgba(255, 255, 255); /* Safari */   
+        text-decoration-color: rgba(255, 255, 255);
+    }
+}
+
+.glacier:hover{
+    font-family: "Anton SC", serif;
+    font-size: 1.1em;
+    line-height: 0.9em;
+}
+
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top:6rem;
+
+    transform: rotate(5deg);
+
+    width:100%;
+}
+
+.big-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.largest{
+    color:white;
+    font-family: "Sofia Sans Condensed", serif;
+    font-size: 8em;
+    font-weight:200;
+    line-height: 1em;
+}
+
+.water{
+    color:white;
+    font-family: "Anton SC", serif;
+    font-size: 9em;
+    line-height: 0.9em;
+}
+
+.main-text{
+    margin-top: 3rem;
+    opacity: 0;
+    line-height: 0.9em;
+    animation: fade-in 10s ease-in-out 3s forwards ;
+}
+
+.water1{
+    animation: water1 10s ease-in-out 1s forwards ;
+}
+.water2{
+    animation: water2 10s ease-in-out 1s forwards ;
+}
+.water3{
+    animation: water3 10s ease-in-out forwards ;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes water1 {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0.4;
+    }
+}
+@keyframes water2 {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0.3;
+    }
+}
+@keyframes water3 {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0.2;
+    }
+}
